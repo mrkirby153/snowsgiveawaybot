@@ -13,10 +13,6 @@ const leftEntries = [
     name: "Home",
     href: "/",
   },
-  {
-    name: "Manage",
-    href: "/manage",
-  },
 ] satisfies NavbarEntry[];
 
 function NavbarItem({ children }: { children: ReactNode }) {
@@ -62,7 +58,7 @@ export default async function Navbar() {
 
   return (
     <>
-      <nav className="bg-gray-300 flex fixed w-full">
+      <nav className="bg-gray-300 flex w-full">
         <ul className="flex">
           <li className="px-2 py-3 items-center">
             <Link href={"/"} className="text-black hover:text-gray-700">
